@@ -33,7 +33,7 @@ springBoot {
 task runNotaryServer(type: JavaExec, dependsOn: jar) {
     classpath = sourceSets.main.runtimeClasspath
     main = 'com.zibanchegueman.webserver.ServerKt'
-    args '--server.port=50005', '--config.rpc.host=localhost', '--config.rpc.port=10003', '--config.rpc.username=user1', '--config.rpc.password=test'
+    args '--server.port=50005', '--config.rpc.host=localhost', '--config.rpc.port=10010', '--config.rpc.username=user1', '--config.rpc.password=test'
 }
 
 task runBankServer(type: JavaExec, dependsOn: jar) {
@@ -42,8 +42,8 @@ task runBankServer(type: JavaExec, dependsOn: jar) {
     args '--server.port=50006', '--config.rpc.host=localhost', '--config.rpc.port=10006', '--config.rpc.username=user1', '--config.rpc.password=test'
 }
 
-task runVaultCServer(type: JavaExec, dependsOn: jar) {
+task runVaultServer(type: JavaExec, dependsOn: jar) {
     classpath = sourceSets.main.runtimeClasspath
     main = 'com.zibanchegueman.webserver.ServerKt'
-    args '--server.port=50007', '--config.rpc.host=localhost', '--config.rpc.port=10009', '--config.rpc.username=user1', '--config.rpc.password=test'
+    args '--server.port=50007', '--config.rpc.host=localhost', '--config.rpc.port=10003', '--config.rpc.username=user1', '--config.rpc.password=test'
 }
