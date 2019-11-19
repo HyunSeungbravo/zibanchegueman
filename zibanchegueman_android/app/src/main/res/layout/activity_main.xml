@@ -7,12 +7,125 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:text="회원가입"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal"
+        android:textSize="14dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/login_register_button"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="55dp" android:layout_marginRight="55dp"/>
+    <TextView
+        android:text="비밀번호를 잊으셨나요 ?"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_resetpassword_button"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="55dp" android:layout_marginStart="55dp"/>
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/rounded_rectangle_color_primary" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="78dp"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginRight="78dp"
+            android:text="간단하게 가입하고 확인가즈아"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:paddingLeft='16dp'
+            android:id="@+id/email_edittext_login"
+            android:background="@drawable/rounded_rectangle_white" android:hint="대학교 이메일"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp" android:layout_marginRight="20dp"
+            android:gravity="center_horizontal|center_vertical"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:background="@drawable/rounded_rectangle_white"
+            android:id="@+id/password_edittext_login"
+            android:paddingLeft='16dp'
+            android:hint="password"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="20dp" android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp" android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/email_edittext_login"
+            android:gravity="center_horizontal|center_vertical"/>
+        <Switch
+            android:textColor="@android:color/white"
+            android:track="@drawable/switch_track_selector"
+            android:thumb="@drawable/switch_thumb_selector"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/KeepMeSignedIn"
+            android:checked="false"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="40dp" android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView26"/>
+        <Button
+            android:text="완료"
+            android:background="@drawable/rounded_rectangle_white_stroke"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:layout_width="133dp"
+            android:layout_height="50dp"
+            android:id="@+id/login_button_login"
+            android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/password_edittext_login"
+            app:layout_constraintStart_toEndOf="@+id/KeepMeSignedIn" android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp" android:layout_marginRight="20dp"/>
+        <TextView
+            android:text="자동 로그인"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView26"
+            app:layout_constraintStart_toStartOf="@+id/KeepMeSignedIn"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/password_edittext_login"/>
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_progressBar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
