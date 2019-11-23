@@ -25,6 +25,10 @@ class HubActivity : AppCompatActivity() {
             startActivity(Intent(this, AccountActivity::class.java))
 
         }
+
+        real_block_view_btn.setOnClickListener {
+            startActivity(Intent(this, BlockInfoActivity::class.java))
+        }
     }
 
 }
