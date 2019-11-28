@@ -14,8 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
+
         <activity android:name=".BlockInfoActivity"></activity>
-        <activity android:name=".Block_info" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".HubActivity" />
         <activity android:name=".RegisterActivity" />
