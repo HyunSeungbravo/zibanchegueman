@@ -13,19 +13,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
+        android:hardwareAccelerated="false"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".BlockInfoActivity"></activity>
-        <activity android:name=".AccountActivity" />
-        <activity android:name=".HubActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".ForgotPassword" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".BlockInfoActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".HubActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
