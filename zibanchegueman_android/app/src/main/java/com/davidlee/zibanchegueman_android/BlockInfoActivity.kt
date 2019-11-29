@@ -8,13 +8,16 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.davidlee.zibanchegueman_android.func.ChangeStatusBarColorFunc
 import kotlinx.android.synthetic.main.activity_block_info.*
+import org.json.JSONObject
 import org.jsoup.Jsoup
+import java.net.URL
 
 
 class BlockInfoActivity : AppCompatActivity() {
 
     val url = "http://35.235.52.246:8080/web/android/index.html"
-
+    val url2 = "http://35.235.52.246:8080/api/web/ious"
+    //val url = "http://35.235.52.246:8080/api/web/ious"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +34,7 @@ class BlockInfoActivity : AppCompatActivity() {
 
             jsoutparsing()
         }
-        //retrieveWebView()
+        retrieveWebView()
     }
 
 
@@ -41,6 +44,7 @@ class BlockInfoActivity : AppCompatActivity() {
         println("----------------------------")
         //1. Fetching the HTML from a given URL
         Jsoup.connect(url).get().run {
+
             //2. Parses and scrapes the HTML response
             select("div.panel-body ul").forEachIndexed { index, element ->
                 var titleAnchor = element.select("li").html()
@@ -87,19 +91,19 @@ class BlockInfoActivity : AppCompatActivity() {
     }
 
 
-/*
+
     fun retrieveWebView(){
 
-        val settings = real_.settings
+        val settings = real_block_view.settings
 
         settings.javaScriptEnabled = true
         //block_view.addJavascriptInterface(WebBrideg(), "java")
 
 
 
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            settings.safeBrowsingEnabled = true
-        }
+        //if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+          //  settings.safeBrowsingEnabled = true
+        //}
 
 
         //settings.loadWithOverviewMode = true
@@ -117,14 +121,26 @@ class BlockInfoActivity : AppCompatActivity() {
         settings.setDomStorageEnabled(true)
 
         // 캐쉬 사용 방법을 정의
-        settings.setCacheMode(WebSettings.LOAD_NO_CACHE)
+        //settings.setCacheMode(WebSettings.LOAD_NO_CACHE)
 
         settings.domStorageEnabled = true
 
 
         real_block_view.loadUrl("http://35.235.52.246:8080/api/web/ious")
 
-    }*/
+        val apiResponse = URL(url2).readText()
+
+        println("**************************************")
+        println(apiResponse)
+        println("**************************************")
+        //val jObject = JSONObject(apiResponse.trimIndent())
+        //val state = jObject.getJSONObject("state")
+        //val data = state.getJSONObject("data")
+        //val from = data.getString("from")
+        //println(from)
+        println("**************************************")
+
+    }
 
 
 ////
