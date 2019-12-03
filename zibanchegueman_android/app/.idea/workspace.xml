@@ -67,24 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_accounting.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="685">
+            <state relative-caret-position="4225">
               <caret line="169" column="41" selection-start-line="169" selection-start-column="41" selection-end-line="169" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/navigation/AccountingFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="733">
               <caret line="89" column="56" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
-              <folding>
-                <element signature="e#56#500#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -92,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.0.0/bcd167792ec03e930d5c8345c99ae07b2627de84/fragment-1.0.0-sources.jar!/androidx/fragment/app/FragmentManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2847">
+            <state relative-caret-position="34575">
               <caret line="1475" selection-start-line="1475" selection-end-line="1475" />
             </state>
           </provider>
@@ -121,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/BlockInfoActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="475">
               <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="42" />
             </state>
           </provider>
@@ -130,7 +127,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/navigation/RealBlockInfoFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1741">
+            <state relative-caret-position="1825">
               <caret line="83" column="47" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="47" />
             </state>
           </provider>
@@ -139,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/HubActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
+            <state relative-caret-position="1075">
               <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
             </state>
           </provider>
@@ -204,8 +201,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/BlockInfoActivity.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/HubActivity.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/func/chosenGroup.kt" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_accounting.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/navigation/AccountingFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_accounting.xml" />
       </list>
     </option>
   </component>
@@ -220,38 +217,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="zibanchegueman_android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="zibanchegueman_android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="func" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="zibanchegueman_android" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
@@ -266,25 +238,13 @@
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="menu" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -546,13 +506,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_hub.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/navigation/HubFragment.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_hub.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/navigation/HubFragment.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/res/menu/bottom_nav_menu.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -579,21 +534,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/AccountActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_account.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/AccountActivity.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_account.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/SplashActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -638,19 +580,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_real_block_info.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_hub.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.0.0/bcd167792ec03e930d5c8345c99ae07b2627de84/fragment-1.0.0-sources.jar!/androidx/fragment/app/FragmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34575">
+          <caret line="1475" selection-start-line="1475" selection-end-line="1475" />
         </state>
       </provider>
     </entry>
@@ -662,24 +603,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_real_block_info.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/BlockInfoActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/navigation/RealBlockInfoFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1741">
+        <state relative-caret-position="1825">
           <caret line="83" column="47" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/HubActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
+        <state relative-caret-position="1075">
           <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.0.0/bcd167792ec03e930d5c8345c99ae07b2627de84/fragment-1.0.0-sources.jar!/androidx/fragment/app/FragmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2847">
-          <caret line="1475" selection-start-line="1475" selection-end-line="1475" />
         </state>
       </provider>
     </entry>
@@ -690,28 +639,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/BlockInfoActivity.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/navigation/AccountingFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="42" />
+        <state relative-caret-position="733">
+          <caret line="89" column="56" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_accounting.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="685">
+        <state relative-caret-position="4225">
           <caret line="169" column="41" selection-start-line="169" selection-start-column="41" selection-end-line="169" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/davidlee/zibanchegueman_android/navigation/AccountingFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="89" column="56" selection-start-line="89" selection-start-column="56" selection-end-line="89" selection-end-column="56" />
-          <folding>
-            <element signature="e#56#500#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
