@@ -4,10 +4,12 @@ package com.davidlee.zibanchegueman_android
 
 import android.os.Bundle
 import android.os.StrictMode
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.davidlee.zibanchegueman_android.func.ChangeStatusBarColorFunc
 import kotlinx.android.synthetic.main.activity_block_info.*
+import org.json.JSONArray
 import org.json.JSONObject
 import org.jsoup.Jsoup
 import java.net.URL
@@ -17,7 +19,8 @@ class BlockInfoActivity : AppCompatActivity() {
 
     val url = "http://35.235.52.246:8080/web/android/index.html"
     val url2 = "http://35.235.52.246:8080/api/web/ious"
-    //val url = "http://35.235.52.246:8080/api/web/ious"
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,9 +35,54 @@ class BlockInfoActivity : AppCompatActivity() {
 
         refresh.setOnClickListener {
 
-            jsoutparsing()
+            real_block_view.loadUrl(url2)
         }
+
         retrieveWebView()
+
+        getBlockInfo()
+    }
+
+    fun getBlockInfo(){
+
+        val apiResponse = URL("http://35.235.52.246:8080/api/web/ious").readText()
+
+        println("**************************************")
+        //println(apiResponse)
+        println("**************************************")
+        val jArray = JSONArray(apiResponse)
+
+
+
+        for (i in 0 until jArray.length()){
+            val obj = jArray.getJSONObject(i)
+            val stateArray = obj.getJSONObject("state")
+            val dataArray = stateArray.getJSONObject("data")
+
+
+            val from = dataArray.getString("from")
+            val to = dataArray.getString("to")
+            val amount = dataArray.getString("amount")
+            val date = dataArray.getString("date")
+            val type = dataArray.getString("type")
+
+            Log.d("&&&", "^^^^^^^^^^^^^^^^^^^^^^^")
+            Log.d("&&&", "from($i): $from")
+            Log.d("&&&", "to($i): $to")
+            Log.d("&&&", "amount($i): $amount")
+            Log.d("&&&", "date($i): $date")
+            Log.d("&&&", "type($i): $type")
+            Log.d("&&&", "^^^^^^^^^^^^^^^^^^^^^^^")
+
+
+
+
+
+        }
+        Log.d("&&&", jArray.length().toString())
+
+        println("**************************************")
+
     }
 
 
@@ -126,21 +174,13 @@ class BlockInfoActivity : AppCompatActivity() {
         settings.domStorageEnabled = true
 
 
-        real_block_view.loadUrl("http://35.235.52.246:8080/api/web/ious")
+        real_block_view.loadUrl(url2)
 
-        val apiResponse = URL(url2).readText()
 
-        println("**************************************")
-        println(apiResponse)
-        println("**************************************")
-        //val jObject = JSONObject(apiResponse.trimIndent())
-        //val state = jObject.getJSONObject("state")
-        //val data = state.getJSONObject("data")
-        //val from = data.getString("from")
-        //println(from)
-        println("**************************************")
 
     }
+
+
 
 
 ////

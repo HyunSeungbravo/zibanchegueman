@@ -10,7 +10,7 @@
     <WebView
         android:id="@+id/real_block_view"
         android:layout_width="397dp"
-        android:layout_height="535dp"
+        android:layout_height="600dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
         android:layout_marginEnd="1dp"
@@ -23,10 +23,10 @@
 
     <Button
         android:id="@+id/refresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="63dp"
+        android:layout_height="49dp"
         android:layout_marginTop="28dp"
-        android:text="Button"
+        android:background="@android:drawable/ic_menu_rotate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

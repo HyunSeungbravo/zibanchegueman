@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">zibanchegueman_android</string>
+    <string name="app_name">zibanchegueman</string>
+    <string name="title_activity_hub">모임 회계</string>
+    <string name="title_blockinfo">블록 정보</string>
+    <string name="title_Settings">내 정보</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

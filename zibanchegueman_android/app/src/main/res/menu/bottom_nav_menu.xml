@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_Accounting"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/title_activity_hub" />
+
+    <item
+        android:id="@+id/navigation_RealBlockInfo"
+        android:icon="@android:drawable/ic_lock_idle_lock"
+        android:title="@string/title_blockinfo" />
+
+
+    <item android:title="@string/title_Settings" android:id="@+id/navigation_Settings"
+        android:icon="@android:drawable/ic_menu_info_details"/>
+
+</menu>
