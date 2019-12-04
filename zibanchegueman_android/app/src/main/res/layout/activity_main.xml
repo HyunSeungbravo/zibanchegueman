@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     tools:context=".MainActivity">
 
     <TextView
@@ -63,7 +64,7 @@
             android:layout_marginTop="25dp"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/rounded_rectangle_white"
+            android:background="@drawable/rounded_rectagnle_white_main"
             android:ems="10"
             android:gravity="center_horizontal|center_vertical"
             android:hint="아이디"
@@ -81,8 +82,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="18dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/rounded_rectangle_white"
+            android:background="@drawable/rounded_rectagnle_white_main"
             android:ems="10"
             android:gravity="center_horizontal|center_vertical"
             android:hint="비밀번호"

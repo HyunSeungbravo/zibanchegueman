@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">zibanchegueman</string>
+    <string name="app_name">지반채그맨</string>
     <string name="title_activity_hub">모임 회계</string>
     <string name="title_blockinfo">블록 정보</string>
     <string name="title_Settings">내 정보</string>
