@@ -6,6 +6,7 @@
     <color name="colorPrimaryLight">#7186C0</color>
     <color name="colorPrimaryLighter">#C9DCF8</color>
     <color name="colorPrimaryRealDark">#142233</color>
+    <color name="colorLightRed">#D8D65454</color>
 
 
     <color name="colorBlackTransparent">#99000000</color>

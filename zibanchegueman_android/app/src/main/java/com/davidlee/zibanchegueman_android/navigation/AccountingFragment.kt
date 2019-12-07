@@ -1,16 +1,20 @@
 package com.davidlee.zibanchegueman_android.navigation
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.os.StrictMode
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.davidlee.zibanchegueman_android.AdminActivity
 import com.davidlee.zibanchegueman_android.R
 import com.davidlee.zibanchegueman_android.func.chosenGroup
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_accounting.*
 import org.json.JSONArray
 import java.net.URL
@@ -28,6 +32,9 @@ class AccountingFragment : Fragment(){
 
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
         StrictMode.setThreadPolicy(policy)
+        Account_progressBar.visibility = View.GONE
+        account_admin.isGone = true
+
 
         init_btns()
 
@@ -38,7 +45,7 @@ class AccountingFragment : Fragment(){
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        
+
 
         fragmentView = LayoutInflater.from(activity).inflate(R.layout.fragment_accounting, container, false)
 
@@ -55,6 +62,8 @@ class AccountingFragment : Fragment(){
         }
 
         accounting_refresh.setOnClickListener {
+
+            Account_progressBar.visibility = View.VISIBLE
             getAccounting(0)
         }
 
@@ -66,6 +75,11 @@ class AccountingFragment : Fragment(){
 
 
 
+        }
+
+        account_admin.setOnClickListener {
+
+            startActivity(Intent(view!!.context, AdminActivity::class.java ))
         }
 
     }
@@ -122,6 +136,27 @@ class AccountingFragment : Fragment(){
 
     }
 
+    fun rearrangeAdminMode(){
+
+        when (chosenGroup.mode){
+            0->{
+                account_admin.isGone = true
+
+            }
+            1 ->{
+                account_admin.isGone = true
+            }
+            2 ->{
+                account_admin.isGone = false
+
+            }
+            3 ->{
+                account_admin.isGone = true
+            }
+        }
+
+    }
+
     fun getAccounting(mode: Int){
 
         when (mode){
@@ -144,6 +179,9 @@ class AccountingFragment : Fragment(){
 
             }
         }
+
+        rearrangeAdminMode()
+        Account_progressBar.visibility = View.GONE
 
 
 

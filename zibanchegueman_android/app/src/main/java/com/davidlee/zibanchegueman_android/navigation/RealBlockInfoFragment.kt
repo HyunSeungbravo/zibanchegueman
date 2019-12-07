@@ -10,6 +10,7 @@ import com.davidlee.zibanchegueman_android.BlockInfoActivity
 import com.davidlee.zibanchegueman_android.R
 import kotlinx.android.synthetic.main.activity_block_info.*
 import kotlinx.android.synthetic.main.activity_block_info.real_block_view
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_real_block_info.*
 
 class RealBlockInfoFragment : Fragment(){
@@ -19,6 +20,8 @@ class RealBlockInfoFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        Real_progressBar.visibility = View.GONE
 
         getBlockInfo()
 
@@ -77,7 +80,9 @@ class RealBlockInfoFragment : Fragment(){
     fun init_btns(){
 
         block_refresh.setOnClickListener {
+            Real_progressBar.visibility = View.VISIBLE
             real_block_view.loadUrl(url1)
+            Real_progressBar.visibility = View.GONE
         }
 
         block_realdata.setOnClickListener {

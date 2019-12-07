@@ -6,6 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.davidlee.zibanchegueman_android.R
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.fragment_setting.*
+
 
 class SettingFragment : Fragment() {
 
@@ -13,6 +16,8 @@ class SettingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        stringInit()
 
     }
 
@@ -22,6 +27,14 @@ class SettingFragment : Fragment() {
 
 
         return fragmentView
+    }
+
+
+    fun stringInit(){
+
+        val email = FirebaseAuth.getInstance().currentUser!!.email.toString()
+
+        Setting_Email.text = email
     }
 
 
