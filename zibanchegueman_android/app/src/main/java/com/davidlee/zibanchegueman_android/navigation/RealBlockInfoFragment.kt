@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
 import com.davidlee.zibanchegueman_android.BlockInfoActivity
 import com.davidlee.zibanchegueman_android.R
@@ -24,6 +25,8 @@ class RealBlockInfoFragment : Fragment(){
         Real_progressBar.visibility = View.GONE
 
         getBlockInfo()
+
+        //block_realdata.isGone = true
 
         init_btns()
 
