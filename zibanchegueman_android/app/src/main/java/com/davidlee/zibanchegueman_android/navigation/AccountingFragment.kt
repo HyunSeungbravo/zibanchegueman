@@ -27,6 +27,13 @@ class AccountingFragment : Fragment(){
 
     var fragmentView : View? = null
 
+    var from: String? = null
+    var to: String? = null
+    var amount: String? = null
+    var date: String? = null
+    var type: String? = null
+
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -65,6 +72,7 @@ class AccountingFragment : Fragment(){
 
             Account_progressBar.visibility = View.VISIBLE
             getAccounting(0)
+            ShowDialog("새로운 트랜젝션 내용","from : ${from}\nto : ${to}\namount : ${amount}\ndate : ${date}\ntype : ${type}", "확인")
         }
 
         view_realblock.setOnClickListener {
@@ -212,13 +220,13 @@ class AccountingFragment : Fragment(){
 
 
 
-            val from = dataArray.getString("from")
-            val to = dataArray.getString("to")
-            val amount = dataArray.getString("amount")
-            val date = dataArray.getString("date")
-            val type = dataArray.getString("type")
+             from = dataArray.getString("from")
+             to = dataArray.getString("to")
+             amount = dataArray.getString("amount")
+             date = dataArray.getString("date")
+             type = dataArray.getString("type")
 
-            val amount_int = amount.toInt()
+            val amount_int = amount!!.toInt()
 
             if (type == "Withdraw"){
                 withdraw_amount_Int_temp = withdraw_amount_Int_temp + amount_int
@@ -286,6 +294,33 @@ class AccountingFragment : Fragment(){
         deposit_amount_text.text = depoist_amount_Int.toString()
         withdraw_amount_text.text = withdraw_amount_Int.toString()
         balance_amount_text.text = balance_Int.toString()
+
+    }
+
+    private fun ShowDialog(title : String, message : String, Posbutton : String){
+
+        val builder = androidx.appcompat.app.AlertDialog.Builder(view!!.context)
+        builder.setTitle(title)
+        builder.setMessage(message)
+        builder.setPositiveButton(Posbutton) { dialog, which -> }
+
+        /*
+        builder.setPositiveButton(android.R.string.yes) { dialog, which ->
+            Toast.makeText(applicationContext,
+                android.R.string.yes, Toast.LENGTH_SHORT).show()
+        }
+
+        builder.setNegativeButton(android.R.string.no) { dialog, which ->
+            Toast.makeText(applicationContext,
+                android.R.string.no, Toast.LENGTH_SHORT).show()
+        }
+
+        builder.setNeutralButton("Maybe") { dialog, which ->
+            Toast.makeText(applicationContext,
+                "Maybe", Toast.LENGTH_SHORT).show()
+        }
+        */
+        builder.show()
 
     }
 
